@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import { Container } from "../../global";
+import styled from 'styled-components'
 
 export const HeroForm = styled.form`
   height: 360px;
@@ -19,31 +18,24 @@ export const HeroForm = styled.form`
     background-color: var(--cor-principal);
     content: '';
     opacity: 0.7;
-
   }
 
   div {
     position: relative;
     color: #eee;
-    }
+  }
 
-`
-
-export const HeroContainer = styled(Container)
-
-
-.heroTitle {
-  font-family: Gloock, serif;
-  font-size: 48px;
-}
-
-@media (max-width: 768px) {
-  .form {
+  @media (max-width: 768px) {
     height: auto;
     padding: 24px 0;
   }
+`
 
-  .heroTitle {
+export const HeroTitle = styled.h2`
+  font-family: Gloock, serif;
+  font-size: 48px;
+
+  @media (max-width: 768px) {
     font-size: 32px;
   }
-}
+`
